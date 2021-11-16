@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react' 
+import useJokeState from './hook/useJokeState' 
 
-function App() {
+
+export default function App() {  
+
+  const [jokes,setJokes] = useState('')  
+
+  const [result,setReaslt] = useState('')    
+
+const  randomJokes = useJokeState(jokes,setReaslt,result)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>   
+      <center>
+      <h1> &#128514;  Genratoer the  Joke  &#128514; </h1> 
+      </center>
+      <input type="text" placeholder='chose random number' value={jokes}  onChange={(e) => setJokes(e.target.value) } />
+      <button >  </button> 
+      <h2> {result}  &#128514;  </h2>
     </div>
-  );
+  )
 }
-
-export default App;
