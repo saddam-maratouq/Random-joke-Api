@@ -1,3 +1,35 @@
+
+**in this app I genrate the random joke by use custoum hook and useRef**
+
+
+1- in the first way I handel the app to genrate a random joke by use onChange the change the state and then fire the use effect 
+
+2- in the secouend way I handel the app by useRef to handel butoon genrate the joke  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
